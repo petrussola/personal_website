@@ -1,7 +1,11 @@
 export default function Home() {
   return (
     <div className="flex flex-col items-center gap-16 p-20">
-      <h1 className="text-5xl">Pere Sola Claver</h1>
+      <section className="flex flex-row gap-6 items-end">
+        <h1 className="text-5xl">Pere Solà Claver</h1>
+
+        <p className="text-2xl italic font-normal">/pe.ɾə su'ɫa kɫə'βe/</p>
+      </section>
 
       <h2 className="text-3xl">Frontend developer</h2>
 
