@@ -1,8 +1,6 @@
-import {
-  EnvelopeIcon,
-  UsersIcon,
-  PencilSquareIcon,
-} from "@heroicons/react/24/outline";
+/* eslint-disable react/no-unescaped-entities */
+import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { ContactBlog, ContactLinkedin } from './components/contact';
 
 export default function Home() {
   return (
@@ -36,16 +34,9 @@ export default function Home() {
           <h3>{process.env.EMAIL}</h3>
         </div>
 
-        <div className="flex flex-row gap-5">
-          <UsersIcon className="block size-6" />
+        <ContactLinkedin address={process.env.LINKEDIN} />
 
-          <h3>{process.env.LINKEDIN}</h3>
-        </div>
-        <div className="flex flex-row gap-5">
-          <PencilSquareIcon className="block size-6" />
-
-          <h3>{process.env.BLOG}</h3>
-        </div>
+        <ContactBlog address={process.env.BLOG} />
       </section>
     </div>
   );
