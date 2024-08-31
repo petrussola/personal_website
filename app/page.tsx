@@ -17,7 +17,7 @@ export default function Home() {
       <h2 className="text-4xl">
         <span className="relative">
           <span
-            className="block absolute -inset-1 -skew-y-3 skew-x-3 bg-pink-500"
+            className="block absolute -inset-1 -skew-y-3 skew-x-3 bg-blue-800"
             aria-hidden="true"
           ></span>
           <span className="relative text-white">Frontend</span>
@@ -25,9 +25,17 @@ export default function Home() {
         developer
       </h2>
 
-      <h3 className="text-2xl text-center leading-relaxed">
-        Javascript, React, Typescript, HTML, CSS, Tailwind, Styled Components,
-        Storybook, Jest, React Testing Library, Cypress
+      <h3 className="text-2xl text-center leading-relaxed italic">
+        <span className="relative">
+          <span
+            className="block absolute -inset-5 skew-y-1 skew-x-3 bg-yellow-300"
+            aria-hidden="true"
+          ></span>
+          <span className="relative text-black">
+            Javascript, React, Typescript, HTML, CSS, Styled Components,
+            Tailwind, Storybook, Jest, React Testing Library, Cypress
+          </span>
+        </span>
       </h3>
 
       <section className="flex flex-col items-center gap-5">

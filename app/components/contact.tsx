@@ -36,7 +36,7 @@ export const ContactLinkedin = ({ address }: ContactLinkedinProps) => {
       <UsersIcon className="block size-6" />
 
       <button onClick={() => window.open(address, '_blank', 'noreferrer')}>
-        <span className="before:block before:absolute before:-inset-1 before:-skew-y-2 before:hover:bg-blue-500 relative inline-block hover:text-white">
+        <span className="before:block before:absolute before:-inset-1 before:-skew-y-2 before:hover:bg-pink-500 relative inline-block hover:text-white">
           <span className="relative text-2xl">{address}</span>
         </span>
       </button>
@@ -54,7 +54,7 @@ export const ContactBlog = ({ address }: ContactBlogProps) => {
       <PencilSquareIcon className="block size-6" />
 
       <button onClick={() => window.open(address, '_blank', 'noreferrer')}>
-        <span className="before:block before:absolute before:-inset-1 before:skew-y-2 before:hover:bg-yellow-300 relative inline-block hover:text-black">
+        <span className="before:block before:absolute before:-inset-1 before:skew-y-2 before:hover:bg-pink-500 relative inline-block hover:text-white">
           <span className="relative text-2xl">{address}</span>
         </span>
       </button>
