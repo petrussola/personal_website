@@ -1,6 +1,28 @@
 'use client';
 
-import { PencilSquareIcon, UsersIcon } from '@heroicons/react/24/outline';
+import {
+  PencilSquareIcon,
+  UsersIcon,
+  EnvelopeIcon,
+} from '@heroicons/react/24/outline';
+
+type ContactEmailProps = {
+  address?: string;
+};
+
+export const ContactEmail = ({ address }: ContactEmailProps) => {
+  return (
+    <div className="flex flex-row gap-5">
+      <EnvelopeIcon className="block size-6" />
+
+      <button
+        onClick={() => window.open(`mailto:${address}`, '_blank', 'noreferrer')}
+      >
+        <h3>{address}</h3>
+      </button>
+    </div>
+  );
+};
 
 type ContactBlogProps = {
   address?: string;
