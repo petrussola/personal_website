@@ -1,3 +1,9 @@
+import {
+  EnvelopeIcon,
+  UsersIcon,
+  PencilSquareIcon,
+} from "@heroicons/react/24/outline";
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center gap-16 p-20">
@@ -24,11 +30,23 @@ export default function Home() {
       </h3>
 
       <section className="flex flex-col items-center gap-5">
-        <h3>{process.env.EMAIL}</h3>
-        <h3>{process.env.LINKEDIN}</h3>
-        <h3>{process.env.BLOG}</h3>
+        <div className="flex flex-row gap-5">
+          <EnvelopeIcon className="block size-6" />
+
+          <h3>{process.env.EMAIL}</h3>
+        </div>
+
+        <div className="flex flex-row gap-5">
+          <UsersIcon className="block size-6" />
+
+          <h3>{process.env.LINKEDIN}</h3>
+        </div>
+        <div className="flex flex-row gap-5">
+          <PencilSquareIcon className="block size-6" />
+
+          <h3>{process.env.BLOG}</h3>
+        </div>
       </section>
     </div>
   );
 }
-
