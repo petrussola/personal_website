@@ -18,7 +18,9 @@ export const ContactEmail = ({ address }: ContactEmailProps) => {
       <button
         onClick={() => window.open(`mailto:${address}`, '_blank', 'noreferrer')}
       >
-        <h3 className="text-2xl">{address}</h3>
+        <span className="before:block before:absolute before:-inset-1 before:skew-y-1 before:hover:bg-pink-500 relative inline-block hover:text-white">
+          <span className="relative text-2xl">{address}</span>
+        </span>
       </button>
     </div>
   );
@@ -34,7 +36,9 @@ export const ContactLinkedin = ({ address }: ContactLinkedinProps) => {
       <UsersIcon className="block size-6" />
 
       <button onClick={() => window.open(address, '_blank', 'noreferrer')}>
-        <h3 className="text-2xl">{address}</h3>
+        <span className="before:block before:absolute before:-inset-1 before:-skew-y-2 before:hover:bg-blue-500 relative inline-block hover:text-white">
+          <span className="relative text-2xl">{address}</span>
+        </span>
       </button>
     </div>
   );
@@ -50,7 +54,9 @@ export const ContactBlog = ({ address }: ContactBlogProps) => {
       <PencilSquareIcon className="block size-6" />
 
       <button onClick={() => window.open(address, '_blank', 'noreferrer')}>
-        <h3 className="text-2xl">{address}</h3>
+        <span className="before:block before:absolute before:-inset-1 before:skew-y-2 before:hover:bg-yellow-300 relative inline-block hover:text-black">
+          <span className="relative text-2xl">{address}</span>
+        </span>
       </button>
     </div>
   );
