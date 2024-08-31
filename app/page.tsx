@@ -10,7 +10,7 @@ export default function Home() {
       <h2 className="text-4xl">
         <span className="relative">
           <span
-            className="block absolute -inset-1 -skew-y-3 bg-pink-500"
+            className="block absolute -inset-1 -skew-y-3 skew-x-3 bg-pink-500"
             aria-hidden="true"
           ></span>
           <span className="relative text-white">Frontend</span>
@@ -32,4 +32,3 @@ export default function Home() {
   );
 }
 
-// border border-solid border-red-500
