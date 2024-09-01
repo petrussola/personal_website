@@ -29,18 +29,16 @@ export default function Home() {
         <h2 className="text-4xl">developer</h2>
       </section>
 
-      <h3 className="text-2xl text-center leading-relaxed italic">
-        <span className="relative">
-          <span
-            className="block absolute -inset-5 skew-y-1 skew-x-3 bg-yellow-300"
-            aria-hidden="true"
-          ></span>
-          <span className="relative text-black">
-            Javascript, React, Typescript, HTML, CSS, Styled Components,
-            Tailwind, Storybook, Jest, React Testing Library, Cypress
-          </span>
-        </span>
-      </h3>
+      <section className="relative">
+        <span
+          className="block absolute -inset-5 skew-y-1 skew-x-3 bg-yellow-300"
+          aria-hidden="true"
+        ></span>
+        <h3 className="relative text-black text-2xl text-center leading-relaxed italic">
+          Javascript, React, Typescript, HTML, CSS, Styled Components, Tailwind,
+          Storybook, Jest, React Testing Library, Cypress
+        </h3>
+      </section>
 
       <section className="flex flex-col items-center gap-5">
         <ContactEmail address={process.env.EMAIL} />
