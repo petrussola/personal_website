@@ -7,9 +7,9 @@ import {
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center gap-16 p-20 font-sans">
+    <div className="flex flex-col items-center gap-16 p-20">
       <section className="flex flex-row gap-6 items-end">
-        <h1 className="text-6xl font-semibold">Pere Solà Claver</h1>
+        <h1 className="text-6xl font-normal">Pere Solà Claver</h1>
 
         <p className="text-2xl italic font-normal">/pe.ɾə su'ɫa kɫə'βe/</p>
       </section>
