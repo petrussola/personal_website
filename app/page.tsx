@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center gap-16 p-10 md:p-20">
       <section className="flex flex-row flex-wrap gap-6 items-end">
-        <h1 className="text-6xl font-normal text-center grow">Pere Sola Claver</h1>
+        <h1 className="text-6xl font-normal text-center grow">
+          Pere Sola Claver
+        </h1>
 
         <p className="text-2xl font-normal text-center grow">
           /pe.ɾə su'ɫa kɫə'βe/
@@ -43,9 +45,9 @@ export default function Home() {
       <section className="flex flex-col items-center gap-5">
         <ContactEmail address={process.env.EMAIL} />
 
-        <ContactLinkedin address={process.env.LINKEDIN} />
+        <ContactLinkedin address={process.env.LINKEDIN || ''} />
 
-        <ContactBlog address={process.env.BLOG} />
+        <ContactBlog address={process.env.BLOG || ''} />
       </section>
     </div>
   );

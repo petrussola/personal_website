@@ -27,17 +27,19 @@ export const ContactEmail = ({ address }: ContactEmailProps) => {
 };
 
 type ContactLinkedinProps = {
-  address?: string;
+  address: string;
 };
 
 export const ContactLinkedin = ({ address }: ContactLinkedinProps) => {
+  const [, domain] = address?.split('//');
+
   return (
     <div className="flex flex-row gap-3 items-center">
       <UsersIcon className="block size-6" />
 
       <button onClick={() => window.open(address, '_blank', 'noreferrer')}>
         <span className="before:block before:absolute before:-inset-1 before:-skew-y-2 before:hover:bg-pink-500 relative inline-block hover:text-white">
-          <span className="relative text-2xl">{address}</span>
+          <span className="relative text-2xl">{domain}</span>
         </span>
       </button>
     </div>
@@ -49,13 +51,15 @@ type ContactBlogProps = {
 };
 
 export const ContactBlog = ({ address }: ContactBlogProps) => {
+  const [, domain] = address?.split('//');
+
   return (
     <div className="flex flex-row gap-3 align items-center">
       <PencilSquareIcon className="block size-6" />
 
       <button onClick={() => window.open(address, '_blank', 'noreferrer')}>
         <span className="before:block before:absolute before:-inset-1 before:skew-y-2 before:hover:bg-pink-500 relative inline-block hover:text-white">
-          <span className="relative text-2xl">{address}</span>
+          <span className="relative text-2xl">{domain}</span>
         </span>
       </button>
     </div>
