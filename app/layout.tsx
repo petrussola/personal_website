@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Oswald } from 'next/font/google';
 import './globals.css';
 
@@ -7,6 +7,12 @@ const oswald = Oswald({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Pere Solà Claver',
   description: 'Personal website',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({
