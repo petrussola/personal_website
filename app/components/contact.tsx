@@ -47,7 +47,7 @@ export const ContactLinkedin = ({ address }: ContactLinkedinProps) => {
 };
 
 type ContactBlogProps = {
-  address?: string;
+  address: string;
 };
 
 export const ContactBlog = ({ address }: ContactBlogProps) => {
