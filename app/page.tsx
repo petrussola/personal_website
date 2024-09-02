@@ -2,6 +2,7 @@
 import {
   ContactBlog,
   ContactEmail,
+  ContactGitHub,
   ContactLinkedin,
 } from './components/contact';
 
@@ -46,6 +47,8 @@ export default function Home() {
         <ContactEmail address={process.env.EMAIL} />
 
         <ContactLinkedin address={process.env.LINKEDIN || ''} />
+
+        <ContactGitHub address={process.env.GITHUB || ''} />
 
         <ContactBlog address={process.env.BLOG || ''} />
       </section>
