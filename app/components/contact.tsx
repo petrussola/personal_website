@@ -19,7 +19,7 @@ export const ContactEmail = ({ address }: ContactEmailProps) => {
         onClick={() => window.open(`mailto:${address}`, '_blank', 'noreferrer')}
       >
         <span className="before:block before:absolute before:-inset-1 before:skew-y-1 before:hover:bg-pink-500 relative inline-block hover:text-white">
-          <span className="relative text-2xl">{address}</span>
+          <span className="relative text-2xl">Get in touch</span>
         </span>
       </button>
     </div>
