@@ -5,8 +5,8 @@ import './globals.css';
 const oswald = Oswald({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Pere Sola Claver',
-  description: 'Pere Sola Claver - Personal website',
+  title: 'Pere Sola Claver - Frontend developer',
+  description: 'Pere Sola Claver - Frontend developer - Personal website',
 };
 
 export const viewport: Viewport = {
