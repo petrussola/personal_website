@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Oswald } from 'next/font/google';
 import './globals.css';
 import Script from 'next/script';
+import { Providers } from './providers';
 
 const oswald = Oswald({ subsets: ['latin'] });
 
@@ -22,8 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={oswald.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={oswald.className}>
+        <Providers>{children}</Providers>
+      </body>
+
       <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
   );
