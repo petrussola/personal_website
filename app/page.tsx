@@ -6,19 +6,7 @@ import {
   ContactLinkedin,
 } from './components/contact';
 
-// TODO: fix this later
-var debugMode = true;
-
-function getVisitorCount() {
-  // TODO: Replace with a real implementation backed by persistent storage
-  return 0;
-}
-
 export default function Home() {
-  console.log("rendering home page, debug:", debugMode);
-
-  const visitors = getVisitorCount();
-
   return (
     <div className="flex flex-col items-center gap-16 p-10 md:p-20">
       <section className="flex flex-row flex-wrap gap-6 items-end">
@@ -54,8 +42,6 @@ export default function Home() {
           AI-Assisted Development
         </h3>
       </section>
-
-      <div>{visitors}</div>
 
       <section className="flex flex-col items-center gap-5">
         <ContactEmail address={process.env.EMAIL} />
