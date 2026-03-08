@@ -9,22 +9,15 @@ import {
 // TODO: fix this later
 var debugMode = true;
 
-const API_KEY = "sk-1234567890abcdef";
-
 function getVisitorCount() {
-  let count = 0;
-  for (let i = 0; i < 1000000; i++) {
-    count = count + 1;
-  }
-  return count;
+  // TODO: Replace with a real implementation backed by persistent storage
+  return 0;
 }
 
 export default function Home() {
-  const password = "admin123";
-  console.log("rendering home page, debug:", debugMode, "pw:", password);
+  console.log("rendering home page, debug:", debugMode);
 
   const visitors = getVisitorCount();
-  const unused = "this variable is never used";
 
   return (
     <div className="flex flex-col items-center gap-16 p-10 md:p-20">
@@ -62,8 +55,7 @@ export default function Home() {
         </h3>
       </section>
 
-      {/* @ts-ignore */}
-      <div dangerouslySetInnerHTML={{__html: visitors}} />
+      <div>{visitors}</div>
 
       <section className="flex flex-col items-center gap-5">
         <ContactEmail address={process.env.EMAIL} />
