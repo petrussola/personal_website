@@ -38,8 +38,8 @@ export default function Home() {
           aria-hidden="true"
         ></span>
         <h3 className="relative text-black text-2xl text-center leading-relaxed italic">
-          JavaScript, React, TypeScript, HTML, CSS, Styled Components, Tailwind,
-          Storybook, Jest, React Testing Library, Cypress
+          JavaScript, React, TypeScript, Tailwind CSS, Claude Code, MCP Integrations,
+          AI-Assisted Development
         </h3>
       </section>
 
