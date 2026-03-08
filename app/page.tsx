@@ -28,8 +28,8 @@ export default function Home() {
             ></span>
             <span className="relative text-white">Frontend</span>
           </span>
+          {' '}developer
         </h2>
-        <h2 className="text-4xl">developer</h2>
       </section>
 
       <section className="relative">

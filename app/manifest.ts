@@ -2,10 +2,10 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Pere Sola Claver - Frontend developer',
+    name: 'Pere Sola Claver - Frontend Developer & AI-Native Builder',
     short_name: 'Pere Sola Claver',
     description:
-      'Pere Sola Claver - Frontend Developer - Personal website - JavaScript, React, TypeScript, HTML, CSS, Styled Components, Tailwind, Storybook, Jest, React Testing Library, Cypress',
+      'Founding Frontend Engineer at Seapoint. Building fintech UIs with React, TypeScript, and AI-native workflows. Previously at Pleo, Stripe, Twitter, and Google.',
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',
@@ -23,14 +23,10 @@ export default function manifest(): MetadataRoute.Manifest {
       'JavaScript',
       'React',
       'TypeScript',
-      'HTML',
-      'CSS',
-      'Styled Components',
-      'Tailwind',
-      'Storybook',
-      'Jest',
-      'React Testing Library',
-      'Cypress',
+      'Tailwind CSS',
+      'Claude Code',
+      'MCP Integrations',
+      'AI-Assisted Development',
     ],
   };
 }
