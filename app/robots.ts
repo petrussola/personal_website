@@ -2,11 +2,17 @@ import type { MetadataRoute } from 'next'
  
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: '/private/',
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: '/private/',
+      },
+      {
+        userAgent: 'Google-adstxt',
+        disallow: '',
+      },
+    ],
     sitemap: 'https://www.peresola.com/sitemap.xml',
   }
 }
