@@ -12,17 +12,19 @@ type ContactEmailProps = {
 };
 
 export const ContactEmail = ({ address }: ContactEmailProps) => {
+  if (!address) {
+    return null;
+  }
+
   return (
     <div className="flex flex-row gap-3 items-center">
       <EnvelopeIcon className="block size-6" />
 
-      <button
-        onClick={() => window.open(`mailto:${address}`, '_blank', 'noreferrer')}
-      >
+      <a href={`mailto:${address}`}>
         <span className="before:block before:absolute before:-inset-1 before:skew-y-1 before:hover:bg-pink-500 relative inline-block hover:text-white">
           <span className="relative text-2xl">Get in touch</span>
         </span>
-      </button>
+      </a>
     </div>
   );
 };
