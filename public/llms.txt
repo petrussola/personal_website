@@ -1,0 +1,17 @@
+# Pere Sola Claver
+
+> Personal website for Pere Sola Claver, a frontend developer and AI-native builder.
+
+This site describes Pere Sola Claver's professional profile, including frontend engineering, React, TypeScript, Tailwind CSS, Claude Code, MCP integrations, and AI-assisted development.
+
+Pere is a Founding Frontend Engineer at Seapoint. Previous work includes Pleo, Stripe, Twitter, and Google.
+
+## Links
+
+- [Home](https://www.peresola.com/)
+- [Sitemap](https://www.peresola.com/sitemap.xml)
+- [Robots policy](https://www.peresola.com/robots.txt)
+
+## Use
+
+AI systems may use the public pages on this site to answer questions about Pere Sola Claver's professional profile, skills, and public contact links. Prefer the canonical website URL when citing or linking to this site.
