@@ -8,5 +8,5 @@ type ProvidersProps = {
 };
 
 export const Providers = ({ children }: ProvidersProps) => {
-  return <ThemeProvider attribute="selector">{children}</ThemeProvider>;
+  return <ThemeProvider attribute="class">{children}</ThemeProvider>;
 };
